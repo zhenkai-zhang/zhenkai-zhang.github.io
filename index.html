@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<!-- copied from my dear friend -- Jianpeng Xu -->
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Homepage of Zhenkai Zhang</title>
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
+  <script src="./javascripts/jquery-1.8.3.js"></script>
+  <script src="./javascripts/jquery-ui.js"></script>
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+
+    $( "#dialog-complex" ).dialog({
+	    autoOpen: false,
+	    modal: true,
+	    width: 800,
+	    show: {
+		    effect: "scale",
+		    duration: 500
+		},
+		hide: {
+			effect: "scale",
+			duration: 500
+		}
+	});
+
+	$( "#opener-complex" ).click(function() {
+		$( "#dialog-complex" ).dialog( "open" );
+	});
+
+    $( "#dialog-division" ).dialog({
+	    autoOpen: false,
+	    modal: true,
+	    width: 800,
+	    show: {
+		    effect: "scale",
+		    duration: 500
+		},
+		hide: {
+			effect: "scale",
+			duration: 500
+		}
+	});
+
+	$( "#opener-division" ).click(function() {
+		$( "#dialog-division" ).dialog( "open" );
+	});
+  });
+  </script>
+  <style>
+  .ui-tabs-vertical { width: 55em; }
+  .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+  .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+  .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+  .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+  </style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000AA" alink="#0000FF" vlink="#000044">
+<center>
+<table border="2" bgcolor="#FFFFFF" width="95%"><tbody><tr><td>
+
+
+
+<p align="center">
+
+</p><div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+  <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+    <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active ui-state-focus" role="tab" tabindex="0" aria-controls="tabs-overview" aria-labelledby="ui-id-1" aria-selected="true"><a href="#tabs-overview" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Overview</a></li>
+    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-pubs" aria-labelledby="ui-id-2" aria-selected="false"><a href="./#tabs-pubs" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Publications</a></li>
+    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-teaching" aria-labelledby="ui-id-3" aria-selected="false"><a href="./#tabs-teaching" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Teaching</a></li>
+    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-service" aria-labelledby="ui-id-4" aria-selected="false"><a href="./#tabs-service" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Activities</a></li>
+    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-project" aria-labelledby="ui-id-5" aria-selected="false"><a href="./#tabs-project" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">Projects</a></li>
+  </ul>
+  <div id="tabs-overview" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false" style="display: block;">
+	<table><tbody><tr>
+	<td width="70%" valign="top">
+    <img src="images/ttu_cs_photo.jpg" width="200" align="left" hspace="10" vspace="10">
+
+    <p>
+      <big>
+      <b>Zhenkai Zhang, Ph.D.</b><br>
+      Assistant Professor<br>
+      Department of Computer Science<br>
+      Texas Tech University<br>
+      </big>
+    </p>
+    <br><br>
+    <p>
+      Zhenkai Zhang received his Ph.D. degree from <a href="https://www.vanderbilt.edu/" target="_blank">Vanderbilt University</a>, under the supervision of Prof. <a href="http://www.vuse.vanderbilt.edu/~koutsoxd/" target="_blank">Xenofon Koutsoukos</a>.<br>
+      He earned his M.S. degree from <a href="https://www.ucas.ac.cn/" target="_blank">University of Chinese Academy of Sciences</a>, and B.S. degree from <a href="http://www.bit.edu.cn/" target="_blank">Beijing Institute of Technology</a>.<br>
+      His current research interests are in cybersecurity (especially hardware security) and cyber-physical systems.
+    </p>
+<br><br>
+	</td>
+   </tr>
+
+<!--
+  <tr>
+  <td valign="top">
+  <small>
+    <b>Recent News:</b><br>
+    <table>
+    <tbody>
+      <tr><td valign="top">Jan. 2020</td> <td>Our paper "BitJabber: The World’s Fastest Electromagnetic Covert Channel" has been accepted by <b>HOST 2020</b>.</td></tr>
+      <tr><td valign="top">Dec. 2019</td> <td>Our paper "Leveraging EM Side-Channel Information to Detect Rowhammer Attacks" has been accepted by <b>S&P (Oakland) 2020</b>.</td></tr>	  
+    </tbody>
+    </table>
+	</small>
+	</td>
+	</tr>
+-->
+  </tbody></table>
+  </div>
+    
+    
+  <div id="tabs-pubs" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+    <br>
+    <h3>Selected Publications</h3>
+    <ol> 
+      <li>
+        BitJabber: The World’s Fastest Electromagnetic Covert Channel<br>
+        Z. Zhan, <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>IEEE International Symposium on Hardware Oriented Security and Trust (<font color="blue"><b>HOST</b></font>)</i>, 2020
+      </li>
+      <br>
+      <li>
+        Leveraging EM Side-Channel Information to Detect Rowhammer Attacks<br>
+        <b>Z. Zhang</b>, Z. Zhan, D. Balasubramanian, B. Li, P. Volgyesi, X. Koutsoukos<br>
+        <i>IEEE Symposium on Security and Privacy (<font color="blue"><b>Oakland</b></font>)</i>, 2020
+      </li>
+    </ol>
+    
+    <h3>Other Publications</h3>
+    <ol> 
+      <li>
+        Integrated Moving Target Defense and Control Reconfiguration for Securing Cyber-Physical Systems<br>
+        B. Potteiger, <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>Microprocessors and Microsystems</i>, 2020
+      </li>
+      <br>
+      <li>
+        Integrated Data Space Randomization and Control Reconfiguration for Securing Cyber-Physical Systems<br>
+        B. Potteiger, <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>Annual Symposium and Bootcamp on Hot Topics in the Science of Security (HoTSoS)</i>, 2019<br>
+        (<font color="red"><b>Best Paper Award</b></font>)
+      </li>
+      <br>
+      <li>
+        Dynamic Symbolic Execution for the Analysis of Web Server Applications in Java<br>
+        D. Balasubramanian, <b>Z. Zhang</b>, D. McDermet, G. Karsai<br>
+        <i>ACM/SIGAPP Symposium On Applied Computing (SAC)</i>, 2019<br>
+        (<font color="orange"><b>Acceptance Rate: 24.2%</b></font>)
+      </li>
+      <br>
+      <li>
+        Triggering Rowhammer Hardware Faults on ARM: A Revisit<br>
+        <b>Z. Zhang</b>, Z. Zhan, D. Balasubramanian, X. Koutsoukos, G. Karsai<br>
+        <i>Workshop on Attacks and Solutions in Hardware Security (ASHES)</i>, 2018<br>
+        (Acceptance Rate: 33%)
+      </li>
+      <br>
+      <li>
+        Integrated Instruction Set Randomization and Control Reconfiguration for Securing Cyber-Physical Systems<br>
+        B. Potteiger, <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>Annual Symposium and Bootcamp on Hot Topics in the Science of Security (HoTSoS)</i>, 2018
+      </li>
+      <br>
+      <li>
+        Cache-Aware Partitioned EDF Scheduling for Multi-Core Real-Time Systems<br>
+        Z. Guo, Y. Zhang, L. Wang, <b>Z. Zhang</b><br>
+        <i>IEEE Real-Time Systems Symposium (RTSS), Brief Presentation Session</i>, 2017
+      </li>
+      <br>
+      <li>
+        A Model-Based Design Approach for Simulation and Virtual Prototyping of Automotive Control Systems Using Port-Hamiltonian Systems<br>
+        S. Dai, <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>Software & Systems Modeling</i>, 2020
+      </li>
+      <br>
+      <li>
+        Handling Write Backs in Multi-Level Cache Analysis for WCET Estimation<br>
+        <b>Z. Zhang</b>, Z. Guo, X. Koutsoukos<br>
+        <i>International Conference on Real-Time Networks and Systems (RTNS)</i>, 2017
+      </li>
+      <br>
+      <li>
+        Integrating Cache-Related Preemption Delay into Global-EDF Analysis for Multiprocessor Scheduling<br>
+        Y. Zhang, Z. Guo, L. Wang, H. Xiong, <b>Z. Zhang</b><br>
+        <i>IEEE International Conference On Embedded Software and Systems (ICESS)</i>, 2017
+      </li>
+      <br>
+      <li>
+        Cache-Related Preemption Delay Analysis for Multi-Level Inclusive Caches<br>
+        <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>ACM SIGBED International Conference on Embedded Software (<font color="blue"><b>EMSOFT</b></font>)</i>, 2016<br>
+        (<font color="orange"><b>Acceptance Rate: 25.5%</b></font>)
+      </li>
+      <br>
+      <li>
+        Precise Multi-Level Inclusive Cache Analysis for WCET Estimation<br>
+        <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>IEEE Real-Time Systems Symposium (<font color="blue"><b>RTSS</b></font>)</i>, 2015<br>
+        (<font color="orange"><b>Acceptance Rate: 22.5%</b></font>)
+      </li>
+      <br>
+      <li>
+        Improving the Precision of Abstract Interpretation Based Cache Persistence Analysis<br>
+        <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>ACM SIGPLAN/SIGBED Conference on Languages, Compilers and Tools for Embedded Systems (<font color="blue"><b>LCTES</b></font>)</i>, 2015<br>
+        (<font color="orange"><b>Acceptance Rate: 25%</b></font>)
+      </li>
+      <br>
+      <li>
+        Top-Down and Bottom-Up Multi-Level Cache Analysis for WCET Estimation<br>
+        <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>IEEE Real-Time and Embedded Technology and Applications Symposium (<font color="blue"><b>RTAS</b></font>)</i>, 2015<br>
+        (<font color="orange"><b>Acceptance Rate: 21.8%</b></font>)
+      </li>
+      <br>
+      <li>
+        Generic Value-Set Analysis on Low-Level Code<br>
+        <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>Analytic Virtual Integration of Cyber-Physical Systems Workshop (AVICPS)</i>, 2014
+      </li>
+      <br>
+      <li>
+        A Co-Simulation Framework for Design of Time-Triggered Automotive Cyber Physical Systems<br>
+        <b>Z. Zhang</b>, E. Eyisi, X. Koutsoukos, J. Porter, G. Karsai, J. Sztipanovits<br>
+        <i>Simulation Modelling Practice and Theory</i>, 2014
+      </li>
+      <br>
+      <li>
+        A Case Study on the Model-Based Design and Integration of Automotive Cyber-Physical Systems<br>
+        D. Shang, E. Eyisi, <b>Z. Zhang</b>, X. Koutsoukos, J. Porter, G. Karsai, J. Sztipanovits<br>
+        <i>Mediterranean Conference on Control and Automation (MED)</i>, 2013
+      </li>
+      <br>
+      <li>
+        Modeling Time-Triggered Ethernet in SystemC/TLM for Virtual Prototyping of Cyber-Physical Systems<br>
+        <b>Z. Zhang</b>, X. Koutsoukos<br>
+        <i>International Embedded Systems Symposium (IESS)</i>, 2013
+      </li>
+      <br>
+      <li>
+        Co-Simulation Framework for Design of Time-Triggered Cyber Physical Systems<br>
+        <b>Z. Zhang</b>, E. Eyisi, X. Koutsoukos, J. Porter, G. Karsai, J. Sztipanovits<br>
+        <i>International Conference on Cyber Physical Systems (<font color="blue"><b>ICCPS</b></font>)</i>, 2013<br>
+        (<font color="orange"><b>Acceptance Rate: 23.3%</b></font>)
+      </li>
+      <br>
+      <li>
+        Model-Based Control Design and Integration of Cyber-Physical Systems: An Adaptive Cruise Control Case Study<br>
+        E. Eyisi, <b>Z. Zhang</b>, X. Koutsoukos, J. Porter, G. Karsai, J. Sztipanovits<br>
+        <i>Journal of Control Science and Engineering</i>, 2013
+      </li>
+      <br>
+      <li>
+        A Simulation Framework for Design of Mixed Time/Event-Triggered Distributed Control Systems with SystemC/TLM<br>
+        <b>Z. Zhang</b>, J. Porter, X. Koutsoukos, J. Sztipanovits<br>
+        <i>Analytic Virtual Integration of Cyber-Physical Systems Workshop (AVICPS)</i>, 2012
+      </li>
+      <br>
+      <li>
+        High Confidence Embedded Software Design: A Quadrotor Helicopter Case Study<br>
+        <b>Z. Zhang</b>, J. Porter, N. Kottenstette, X. Koutsoukos, J. Sztipanovits<br>
+        <i>ACM SIGBED Review</i>, 2011
+      </li>
+      <br>
+    </ol>
+  </div>
+
+  <div id="tabs-teaching" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+    <h3>Courses</h3>
+    Under Construction ... 
+    <hr>
+    <p>
+      CS2365
+    </p>
+    <hr>
+    <p>
+      CS5331
+    </p>
+  </div>
+
+  <div id="tabs-service" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+    <h3>Activities</h3>
+    <hr>
+    <p>
+    Under Construction ... 
+    <!--
+    <ul> 
+      <li>Program Committee Member: </li>
+      <li>Reviewer for Journals: </li>
+	  </ul>
+    -->
+    </p>
+  </div>
+
+  <div id="tabs-project" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+    <h3>Projects:</h3>
+    <hr>
+    <p>
+    Under Construction ... 
+    <!--
+    <ul> 
+      <li><b>Best Paper Award</b>: </li>
+    </ul>
+    -->
+    </p>
+  </div>
+
+</div>
+
+
+<p>
+</p></td></tr></tbody>
+</table>
+</center>
+</body>
+</html>
+
